@@ -301,6 +301,13 @@ h2{font-family:var(--f-display);font-weight:400;font-style:italic;font-size:30px
 .rk{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--ink-soft)}
 .rt{font-family:var(--f-script);font-style:normal;font-size:clamp(46px,14vw,60px);line-height:1.05;margin:10px 0 12px}
 .rd{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.deadline{display:grid;gap:2px;max-width:300px;margin:22px auto 0;padding:14px 18px;border-radius:16px;
+  background:linear-gradient(135deg,#fff8ec,#fbe6c4);border:1.5px solid var(--gold);box-shadow:0 8px 18px rgba(200,150,62,.2)}
+.dl-k{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:#8a6420;font-weight:600}
+.dl-d{font-family:var(--f-display);font-size:28px;line-height:1.2;color:var(--ink)}
+.rd{display:inline-grid;gap:2px;padding:10px 18px;border-radius:14px;background:linear-gradient(135deg,#fff8ec,#fbe6c4);border:1.5px solid var(--gold)}
+.rd span{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#8a6420;font-weight:600}
+.rd b{font-family:var(--f-display);font-size:24px;font-weight:400;letter-spacing:0;text-transform:none;color:var(--ink)}
 .rsvp{display:grid;gap:22px;margin:28px auto 0;text-align:left}
 .rsvp .field{display:grid;gap:6px;border:0;margin:0;padding:0;min-width:0}
 .rsvp label:not(.choice label),.rsvp legend{font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);font-weight:500;padding:0}
@@ -470,6 +477,10 @@ h2{font-family:var(--f-display);font-weight:400;font-style:italic;font-size:30px
       <div class="year">2026</div>
       <div class="time">de <strong>2:00</strong> a <strong>6:00</strong> de la tarde</div>
       <div class="pill">Comida tipo buffet</div>
+      <div class="deadline">
+        <span class="dl-k">Último día para confirmar</span>
+        <span class="dl-d">30 de noviembre</span>
+      </div>
     </div>
     <div class="countdown reveal">
       <div class="cd"><b id="cd-d">51</b><span>Días</span></div>
@@ -505,7 +516,7 @@ h2{font-family:var(--f-display);font-weight:400;font-style:italic;font-size:30px
         <div class="arch-orn" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.2 7.3L22 12l-7.8 2.7L12 22l-2.2-7.3L2 12l7.8-2.7z"/></svg></div>
         <div class="rk">¿Nos acompañas?</div>
         <h2 id="t-rsvp" class="rt">Confirma<br>tu asistencia</h2>
-        <div class="rd">Último día para confirmar: 30 de noviembre</div>
+        <div class="rd"><span>Último día para confirmar</span><b>30 de noviembre</b></div>
         <form class="rsvp" id="rsvp" novalidate>
           <div class="field">
             <label for="rsvp-name">Tu nombre</label>
